@@ -198,6 +198,11 @@ Navbar
   max-width: 1170px;
   margin: 0 auto;
 }
+
+.nav-center:hover .nav-links {
+  background: linear-gradient(rgba(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
+    var(--clr-primary-5);
+}
 .nav-header {
   display: flex;
   justify-content: space-between;
@@ -229,6 +234,15 @@ Navbar
   color: var(--clr-primary-1);
   background: var(--clr-primary-8);
   padding-left: 2.25rem;
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links {
+  height: 280px;
 }
 
 /*
