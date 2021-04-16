@@ -231,7 +231,7 @@ Navbar
 }
 
 .nav-link:hover {
-  color: var(--clr-primary-1);
+  color: var(--clr-primary-4);
   background: var(--clr-primary-8);
   padding-left: 2.25rem;
 }
@@ -243,6 +243,61 @@ Navbar
 
 .show-links {
   height: 280px;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  /* hide toggle btn */
+  .nav-toggle {
+    display: none;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-center:hover .nav-links,
+  .nav-center:hover .nav-link {
+    background: var(--clr-white);
+  }
+
+  .nav-header {
+    padding: 0 0;
+  }
+
+  .nav-link {
+    padding: 0 0;
+    background: var(--clr-white);
+    margin-right: 0.7rem;
+  }
+  .nav-links:hover {
+    padding: 0;
+    color: var(--clr-primary-5);
+    background: var(--clr-white);
+  }
+  .nav-icons {
+    display: flex;
+  }
+
+  .nav-icon {
+    margin-right: 0.7rem;
+    color: var(--clr-primary-5);
+    font-size: 1.2rem;
+    transition: var(--transition);
+  }
+
+  .nav-icons:hover {
+    color: var(--clr-primary-8);
+  }
 }
 
 /*
